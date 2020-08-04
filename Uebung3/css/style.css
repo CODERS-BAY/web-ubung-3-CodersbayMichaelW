@@ -114,6 +114,7 @@ table {
     border-collapse: collapse;
     width: 40%;
     margin: 1.2rem auto;
+    transition: 0.7s ease-in-out;
 }
 th {
     background-color: rgb(250, 128, 114);
@@ -130,6 +131,10 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: rgb(58,61,64);
     color: rgb(255, 255, 255);
+}
+table:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease-in-out;
 }
 /* rectangel list */
 ol {
@@ -231,9 +236,9 @@ footer > p {
 
 /* animation */
 h2, h3 {
-    -webkit-transition: border-color 1s ease-out;
-    -moz-transition: border-color 1s ease-out;
-    -o-transition: border-color 1s ease-out;
+    -webkit-transition: border-color 1s ease-out; /* Safari and Chrome */
+    -moz-transition: border-color 1s ease-out; /* Firefox */
+    -o-transition: border-color 1s ease-out; /* Opera */
     transition: border-color 1s ease-out;
 }
 
@@ -241,11 +246,7 @@ h2:hover, h3:hover {
     border-bottom: rgb(255, 190, 70) solid 4px;
 }
 
-
-
-
-
-
+/* old animation */
 /* h2:hover, h3:hover {
     animation-name: border-light;
     animation-duration: 1s;
