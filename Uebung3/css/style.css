@@ -230,11 +230,28 @@ footer > p {
 
 
 /* animation */
+h2, h3 {
+    -webkit-transition: border-color 1s ease-out;
+    -moz-transition: border-color 1s ease-out;
+    -o-transition: border-color 1s ease-out;
+    transition: border-color 1s ease-out;
+}
+
 h2:hover, h3:hover {
+    border-bottom: rgb(255, 190, 70) solid 4px;
+}
+
+
+
+
+
+
+/* h2:hover, h3:hover {
     animation-name: border-light;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+
 @keyframes border-light {
     0% {
         border-bottom: rgba(190, 49, 68, 1) solid 4px;
@@ -242,5 +259,4 @@ h2:hover, h3:hover {
     100% {
         border-bottom: rgb(255, 190, 70) solid 4px;
     }
-}
-
+} */
